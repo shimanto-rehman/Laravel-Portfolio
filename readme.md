@@ -6,8 +6,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
-# Laravel-Portfolio
-A portfolio template website app created in Laravel. 
+
+# Laravel Portfolio
+
+A portfolio template website app created in Laravel. This is a Laravel-PHP project of portfolio by [Shimanto Rehman](https://github.com/shimanto-rehman)
+
+### Features
+
+- Dynamic content.
+- Add projects and website meta-data (title, description, footer, etc) by populating a simple JSON file.
+- Enable/disable certain projects directly from database.
+- Easy to setup, just clone and you're good to go!
 
 ## Technologies used
 
