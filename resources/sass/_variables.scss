@@ -1,0 +1,90 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$white:#fff;
+
+//project variables
+$show-home-image: true;
+// Variable for bd-img
+$home-image: linear-gradient( rgba(0,0,0,0.9), rgba(0, 0, 0, 0.7) ),url(https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80) center;
+// Variable for background
+$background-opacity: 0.6;
+// variable for logo sign
+$logo: url(https://i.imgur.com/yEj0i7r.png?1) no-repeat;
+
+    @mixin background {
+        @if $show-home-image {
+            &#bd-img {
+                background: $home-image;
+                background-size:100%;
+                background-attachment:fixed;
+                background-size: cover;
+                &:after{
+                    content:'';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    background: rgba($primary-color,$background-opacity);
+                }
+            }
+        }
+    }
+
+    @mixin mediaSm {
+        @media screen and (max-width: 500px) {
+            @content;
+        }
+    }
+    @mixin mediaMd {
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+    @mixin mediaLg {
+        @media screen and (min-width: 769px) and (max-width: 1170px) {
+            @content;
+        }
+    }
+    @mixin mediaXl {
+        @media screen and (min-width: 1171px) {
+            @content;
+            
+
+        }
+    }
+
+
+            $primary-color: #000;
+            $secondary: #eece1a;
+            $theme-color:#1DB954;
+
+            .logo{
+                
+                width:  122px;
+                height: 118px;
+                background: $logo;
+                background-position: right;
+                // padding-left:94%;
+                background-repeat: no-repeat;
+                z-index: 0;
+
+            }

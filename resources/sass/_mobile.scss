@@ -1,0 +1,172 @@
+//widescreen
+@include mediaXl{
+
+}
+//Desktops and Laptops
+@include mediaLg{
+
+}
+//tablet and mini laptops
+@include mediaMd{
+    content{
+        align-items: center;
+        text-align: center;
+        .title{
+            font-size: 30px !important;
+        }
+    }
+}
+//Smartphones
+@include mediaSm{
+
+
+    .content {
+            align-items: center;
+            text-align: center;
+
+
+            .text{
+                font-size: 11px !important;
+            }
+            
+
+            .title {
+
+                    color: #fff;
+                    font-size: 45px !important;
+                
+            }
+    }
+    .menu{
+
+        .portrait{
+            width: 140px;
+            height: 140px;
+            background: url(https://i.imgur.com/xX7vwOC.jpg?1) center;
+        }
+    }
+
+    .logo{
+                
+        width:  60px ;
+        height: 59px ;
+        background: url(https://i.imgur.com/otPXals.png) ;
+        background-position: right;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+
+    nav ul li a {
+        font-size: 13px !important;
+        text-align: center;
+    }
+
+    .dropdown-item {
+        width: 100%;
+        font-size: 10px !important;
+        text-align: center !important;
+    }
+
+    .loader{
+        top: 41% !important;
+        left: 37% !important;
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .loader:before, .loader:after {
+        content: "";
+        border: 0.5rem solid #eece1a !important;
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .about-info{
+
+        grid-template-areas: 
+        'bioimage' 
+        'bio' 
+        'job1'
+        'job2'
+        'job3' !important;
+        grid-gap: 0px !important;
+        grid-template-columns: repeat(1,1fr) !important;
+        text-align: center !important;
+
+        .bio-image{
+
+            grid-area: bioimage;
+            margin:auto !important;
+            width: 150px;
+            height: 150px;
+            background: url(https://i.imgur.com/0oMBsp0.jpg?1) center;
+            border-radius:50%;
+            border: $secondary 3px solid;
+
+        }
+
+        p.intro {
+
+                width:75% !important;
+                font-weight: 400 !important;
+                font-family: 'Roboto', sans-serif !important;
+                font-size: 14px !important;
+
+        }
+
+        p {
+            margin-top: inherit;
+            margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bio{
+
+                grid-area: bio;
+                font-size: 1rem;
+                text-align: center !important;
+
+        }
+        .job{
+
+                background:rgba(lighten($primary-color,3),0.3);
+                padding: 0.5rem;
+                border-bottom: $secondary 5px solid;
+                height: auto;
+                padding: 20px;
+                float: initial;
+                text-align: center;
+            
+        }
+    }
+
+    .text {
+        font-size: 11px !important;
+        align-items: center !important;
+        padding: 1.5rem !important;
+    }
+    .projects{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .projects img {
+         margin: 0px 0px 0px !important;
+    }
+
+    .boxes div {
+        font-size: 0.8rem !important;
+        padding: 0.8rem 0.5rem !important;
+    }
+    .inputtext {
+        width: 100% !important;
+        font-size: 13px !important;
+    }
+    .inputmessage {
+        width: 100% !important;
+        font-size: 13px !important;
+    }
+    .submitbutton {
+        width: 50% !important;
+        font-size: 16px !important;
+    }
+
+}

@@ -1,0 +1,389 @@
+
+// Personal Gallery Page
+
+ // Accordion Height
+ $a-height: 250px;
+ // Position text along bottom
+ $text-offset: $a-height - 70;
+
+                
+// Profile Picture Gallary
+.accordion1 {
+
+    width:100%;
+    max-width:1080px;
+    height:$a-height;
+    overflow:hidden;
+    margin:50px auto;
+
+    ul {
+
+        width:100%;
+        display:table;
+        table-layout:fixed;
+        margin:0;
+        padding:0;
+
+        li {
+
+        display:table-cell;
+        vertical-align:bottom;
+        position: relative;
+        width:16.666%; // 6 into 100
+        height:$a-height;
+
+        background-repeat:no-repeat;
+        background-position:center center;
+
+        transition:all 500ms ease;
+
+        div {
+            
+            display:block;
+            overflow:hidden;
+            width:100%;
+
+            a {
+            
+            display:block;
+            height:$a-height;
+            width:100%;
+
+            position:relative;
+            z-index:3;
+            // vertical-align: bottom;
+            padding:15px 20px;
+            box-sizing:border-box;
+            color:#fff;
+            text-decoration:none;
+            font-family:Open Sans, sans-serif;
+            
+            transition:all 200ms ease;
+
+            * {
+
+                opacity:0;
+                margin:0;
+                width:100%;
+                text-overflow:ellipsis;
+                position:relative;
+                z-index:5;
+                
+                white-space:nowrap;
+                overflow:hidden;
+                
+                -webkit-transform:translateX(-20px);
+                transform:translateX(-20px);
+
+                -webkit-transition:all 400ms ease;
+                transition:all 400ms ease;
+
+            }
+
+            h2 {
+
+                font-family:'Roboto',sans-serif;
+                text-overflow:clip;
+                font-size:16px;
+                font-weight: 200 !important;
+                text-transform:uppercase;
+                margin-bottom:2px;
+                top:$text-offset;
+
+            }
+            
+            p {
+                
+                top:$text-offset;
+                font-size:13.5px;
+                
+            }
+
+            }
+
+        }
+
+        }
+        
+        // Background images
+        li:nth-child(1) { background-image:url('https://i.imgur.com/YrJ8727.jpg?1'); }
+        li:nth-child(2) { background-image:url('https://i.imgur.com/5YIwoMG.jpg?1'); }
+        li:nth-child(3) { background-image:url('https://i.imgur.com/mbyUQgV.jpg?1'); }
+        li:nth-child(4) { background-image:url('https://i.imgur.com/uvMqhQL.jpg?1'); }
+        li:nth-child(5) { background-image:url('https://i.imgur.com/FcwJGom.jpg?1'); }
+        li:nth-child(6) { background-image:url('https://i.imgur.com/O1ZclCO.jpg?1'); }
+
+        &:hover li,
+        &:focus-within li { width:8%; }
+        
+        li:focus {
+        outline: none;
+        }
+
+        &:hover li:hover,
+        // allow users to tab through active slides
+        li:focus,
+        &:focus-within li:focus {
+
+        width:60%;
+
+        a {
+            
+            // background:rgba(0,0,0,.4);
+            
+            * {
+            
+            opacity:1;
+            -webkit-transform:translateX(0);
+            transform:translateX(0);
+            
+            }
+        
+        }
+
+        }
+        
+        &:hover li {
+        width: 8% !important;
+        
+        a * { opacity: 0 !important; }
+        }
+        
+        &:hover li:hover {
+        width:70% !important;
+
+        a {
+            
+            // background:rgba(0,0,0,.4);
+            
+            * {
+            
+            opacity:1 !important;
+            -webkit-transform:translateX(0);
+            transform:translateX(0);
+            
+            }
+        
+        }
+        }
+
+    }
+
+    }
+// Cover Picture Gallery 
+.accordion2 {
+    
+    width:100%;
+    max-width:1080px;
+    height:$a-height;
+    overflow:hidden;
+    margin:50px auto;
+
+    ul {
+
+        width:100%;
+        display:table;
+        table-layout:fixed;
+        margin:0;
+        padding:0;
+
+        li {
+
+        display:table-cell;
+        vertical-align:bottom;
+        position: relative;
+        width:16.666%; // 6 into 100
+        height:$a-height;
+
+        background-repeat:no-repeat;
+        background-position:center center;
+
+        transition:all 500ms ease;
+
+        div {
+            
+            display:block;
+            overflow:hidden;
+            width:100%;
+
+            a {
+            
+            display:block;
+            height:$a-height;
+            width:100%;
+
+            position:relative;
+            z-index:3;
+            // vertical-align: bottom;
+            padding:15px 20px;
+            box-sizing:border-box;
+            color:#fff;
+            text-decoration:none;
+            font-family:Open Sans, sans-serif;
+            
+            transition:all 200ms ease;
+
+            * {
+
+                opacity:0;
+                margin:0;
+                width:100%;
+                text-overflow:ellipsis;
+                position:relative;
+                z-index:5;
+                
+                white-space:nowrap;
+                overflow:hidden;
+                
+                -webkit-transform:translateX(-20px);
+                transform:translateX(-20px);
+
+                -webkit-transition:all 400ms ease;
+                transition:all 400ms ease;
+
+            }
+
+            h2 {
+
+                font-family:'Roboto',sans-serif;
+                text-overflow:clip;
+                font-size:16px;
+                font-weight: 200 !important;
+                text-transform:uppercase;
+                margin-bottom:2px;
+                top:$text-offset;
+
+            }
+            
+            p {
+                
+                top:$text-offset;
+                font-size:13.5px;
+                
+            }
+
+            }
+
+        }
+
+        }
+        
+        // Background images
+        li:nth-child(1) { background-image:url('https://i.imgur.com/UPuAzkP.jpg?1'); }
+        li:nth-child(2) { background-image:url('https://i.imgur.com/HGfAgnO.jpg?1'); }
+        li:nth-child(3) { background-image:url('https://i.imgur.com/GGSE3iF.jpg?1'); }
+        li:nth-child(4) { background-image:url('https://i.imgur.com/0H78oZJ.jpg?1'); }
+        li:nth-child(5) { background-image:url('https://i.imgur.com/VVM2RRv.jpg?1'); }
+        li:nth-child(6) { background-image:url('https://i.imgur.com/hF32y5F.jpg?1'); }
+
+        &:hover li,
+        &:focus-within li { width:8%; }
+        
+        li:focus {
+        outline: none;
+        }
+
+        &:hover li:hover,
+        // allow users to tab through active slides
+        li:focus,
+        &:focus-within li:focus {
+
+        width:60%;
+
+        a {
+            
+            // background:rgba(0,0,0,.4);
+            
+            * {
+            
+            opacity:1;
+            -webkit-transform:translateX(0);
+            transform:translateX(0);
+            
+            }
+        
+        }
+
+        }
+        
+        &:hover li {
+        width: 8% !important;
+        
+        a * { opacity: 0 !important; }
+        }
+        
+        &:hover li:hover {
+        width:70% !important;
+
+        a {
+            
+            // background:rgba(0,0,0,.4);
+            
+            * {
+            
+            opacity:1 !important;
+            -webkit-transform:translateX(0);
+            transform:translateX(0);
+            
+            }
+        
+        }
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Stack items
+    @media screen and (max-width: 600px) {
+        
+        // IE gets fussy if this isn't here
+        body { margin:0; }
+        
+        .accordion1 .accordion2{
+            
+            height:auto;
+            
+            ul,ul:hover {
+            
+            li,li:hover {
+                
+                position:relative;
+                display:table;
+                table-layout:fixed;
+                width:100%;
+                
+                -webkit-transition:none;
+                transition:none;
+                
+            }
+            
+            }
+            
+        }
+
+        }
