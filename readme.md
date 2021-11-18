@@ -7,63 +7,39 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Technologies used
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+1. Laravel 5.7
+2. JavaScript 
+3. CSS SASS
+4. Bootstrap
+5. PHP 7.1.3
+6. MySql
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requirements to Run
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+1. PHP 7.1.3
+2. Composer
+3. node.js (npm) for installing dependies
+4. git
 
-## Learning Laravel
+## Instructions to install
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+1. Make sure PHP 7+ and Mysql is installed and running. I recommend Xampp for windows users.
+2. Create an empty mysql database and note the name, username, and password.
+3. Make sure git is installed. 
+4. At a command prompt, type "git clone https://github.com/shimanto-rehman/Laravel-Portfolio.git". This will create a laravel-portfolio-site folder in your current directory.
+5. Cd into that directory.
+6. Run 'composer install'
+7. Run 'npm install'
+8. copy .env.example file to .env
+9. Type 'php artisan key:generate'
+10. Type 'php artisan storage:link' to add public storage access.
+11. Edit the .env (not .env.example) and under the mysql settings, put in your database name, username, and password from step 2.
+12. Type 'php artisan migrate' to set up the tables in the database.
+13. Type 'php artisan db:seed' to seed the libraries, languages, frameworks, databases, and skills tables.
+14. Type 'php artisan serve' to start the development server. Browse to http://localhost:8000/register to register as a user.
+15. After registration, it will send you immediately to the profile setup page where you can put in all of your information as if you are trying to find a job. A photo is required.
+16. You will be redirected to the home page with your information set.
+17. (optional) You might want to edit the web.php under routes and disable the register link. There are notes in the web.php on how to do that.
+18. I have used tiny_mce on the text areas on the project and profile page. You can go to the tiny_mce site to get your own custom script url Once you do that, you can put that in the head area of the public.blade.php in the layouts folder.
